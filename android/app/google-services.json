@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1013548112695",
+    "project_id": "projeto-tai3",
+    "storage_bucket": "projeto-tai3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013548112695:android:1072fc65263f94e52358b2",
+        "android_client_info": {
+          "package_name": "com.example.flutter_startup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013548112695-q9unovo7o0qamkdke9744i9bs4vov5kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwUkBwqQXyk1grRyQQB1eKzp1r5WC4PvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013548112695-q9unovo7o0qamkdke9744i9bs4vov5kq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1013548112695-trpphe64n31r2ao7g80eicreefljj21a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterStartup"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

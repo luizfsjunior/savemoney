@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_startup/box.dart';
 import 'package:flutter_startup/scan.dart';
 import 'package:flutter_startup/scraping.dart';
 
@@ -53,14 +54,33 @@ class _MyStatefulWidgetState extends State<Home> {
         ),
       ),
       backgroundColor: Colors.blueGrey,
-      floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: Colors.grey,
-        onPressed: () {
-          Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => const Scraping()));
-        },
-        icon: const Icon(Icons.camera),
-        label: const Text('Scraping'),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            FloatingActionButton.extended(
+              backgroundColor: Colors.grey,
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const Scraping()));
+              },
+              heroTag: 'buttom1',
+              icon: const Icon(Icons.camera),
+              label: const Text('Scraping'),
+            ),
+            FloatingActionButton.extended(
+                backgroundColor: Colors.grey,
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Box()));
+                },
+                heroTag: 'buttom2',
+                icon: const Icon(Icons.list),
+                label: const Text('Base de dados'))
+          ],
+        ),
       ),
     );
   }

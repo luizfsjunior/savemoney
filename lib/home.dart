@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_startup/scan.dart';
+import 'package:flutter_startup/scraping.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -53,13 +54,14 @@ class _MyStatefulWidgetState extends State<Home> {
       ),
       backgroundColor: Colors.blueGrey,
       floatingActionButton: FloatingActionButton.extended(
-          backgroundColor: Colors.grey,
-          onPressed: () {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => const Scan()));
-          },
-          icon: const Icon(Icons.camera),
-          label: const Text('Escanear')),
+        backgroundColor: Colors.grey,
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => const Scraping()));
+        },
+        icon: const Icon(Icons.camera),
+        label: const Text('Scraping'),
+      ),
     );
   }
 }

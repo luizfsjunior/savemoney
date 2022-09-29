@@ -36,7 +36,7 @@ class _MyStatefulWidgetState extends State<Login> {
         _resetForm();
         // ignore: use_build_context_synchronously
         Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => const MyHomePage()));
+            .push(MaterialPageRoute(builder: (context) => const Home()));
       }
     }
 

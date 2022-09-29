@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final user = FlutterFireAuth(context).getLoggedUser();
     return MaterialApp(
-      theme: ThemeData(appBarTheme: const AppBarTheme(color: Colors.green)),
+      theme: ThemeData(appBarTheme: const AppBarTheme(color: Colors.grey)),
       debugShowCheckedModeBanner: false,
       title: _title,
       home: const Scaffold(

@@ -5,14 +5,14 @@ import 'package:html/dom.dart' as dom;
 
 import 'models/Atricle.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class Scraping extends StatefulWidget {
+  const Scraping({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<Scraping> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<Scraping> {
   List<Article> articles = [];
   @override
   void initState() {

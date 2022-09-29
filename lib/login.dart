@@ -81,7 +81,7 @@ class _MyStatefulWidgetState extends State<Login> {
               ),
               const SizedBox(height: 10),
               TextButton(
-                style: TextButton.styleFrom(primary: Colors.white),
+                style: TextButton.styleFrom(foregroundColor: Colors.white),
                 onPressed: () {
                   Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => const RecPwd()));
@@ -99,7 +99,7 @@ class _MyStatefulWidgetState extends State<Login> {
                     height: 60,
                     child: ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.blueGrey,
+                        backgroundColor: Colors.blueGrey,
                       ),
                       onPressed: () {
                         _singInEmailAndPssword();
@@ -116,7 +116,7 @@ class _MyStatefulWidgetState extends State<Login> {
                     height: 60,
                     child: ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.blueGrey,
+                        backgroundColor: Colors.blueGrey,
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(

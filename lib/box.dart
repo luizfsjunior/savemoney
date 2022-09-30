@@ -54,7 +54,6 @@ class _State extends State<Box> {
                 onChanged: (value) {
                   textName = value;
                 },
-                obscureText: true,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Nome do Produto',
@@ -68,7 +67,6 @@ class _State extends State<Box> {
                 onChanged: (value) {
                   price = value;
                 },
-                obscureText: true,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Preço',
@@ -82,7 +80,6 @@ class _State extends State<Box> {
                 onChanged: (value) {
                   marketName = value;
                 },
-                obscureText: true,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Supermercado',

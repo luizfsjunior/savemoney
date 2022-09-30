@@ -92,7 +92,7 @@ class _State extends State<Box> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 0, 0, 110),
+        padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
         child: FloatingActionButton.extended(
             backgroundColor: Colors.grey,
             onPressed: () async {

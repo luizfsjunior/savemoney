@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_startup/box.dart';
-import 'package:flutter_startup/scan.dart';
 import 'package:flutter_startup/scraping.dart';
 
 class Home extends StatefulWidget {
@@ -22,35 +21,33 @@ class _MyStatefulWidgetState extends State<Home> {
         backgroundColor: Colors.grey,
       ),
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(0, 25, 0, 0),
-          child: Column(
-            children: [
-              Container(
-                height: 150,
-                width: 320,
-                color: Colors.grey,
-              ),
-              const SizedBox(height: 15),
-              Container(
-                height: 150,
-                width: 320,
-                color: Colors.grey,
-              ),
-              const SizedBox(height: 15),
-              Container(
-                height: 150,
-                width: 320,
-                color: Colors.grey,
-              ),
-              const SizedBox(height: 15),
-              Container(
-                height: 150,
-                width: 320,
-                color: Colors.grey,
-              ),
-            ],
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: 100,
+              width: 320,
+              color: Colors.grey,
+            ),
+            const SizedBox(height: 15),
+            Container(
+              height: 100,
+              width: 320,
+              color: Colors.grey,
+            ),
+            const SizedBox(height: 15),
+            Container(
+              height: 100,
+              width: 320,
+              color: Colors.grey,
+            ),
+            const SizedBox(height: 15),
+            Container(
+              height: 100,
+              width: 320,
+              color: Colors.grey,
+            ),
+          ],
         ),
       ),
       backgroundColor: Colors.blueGrey,

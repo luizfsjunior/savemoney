@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter_startup/scan.dart';
 import 'package:flutter_startup/services/flutter_fire_auth.dart';
 
 import 'Login.dart';

@@ -1,5 +1,3 @@
-// ignore_for_file: library_private_types_in_public_api
-
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -13,10 +11,10 @@ class Box extends StatefulWidget {
   const Box({super.key});
 
   @override
-  _State createState() => _State();
+  State<Box> createState() => _MyStatefulWidgetState();
 }
 
-class _State extends State<Box> {
+class _MyStatefulWidgetState extends State<Box> {
   CollectionReference data = FirebaseFirestore.instance.collection('data');
   late String textCode;
   late String textName;
@@ -101,7 +99,7 @@ class _State extends State<Box> {
                 'nomeproduto': textName,
                 'supermercado': marketName,
                 'valor': price
-              }).then((value) => print('produto cadastrado'));
+              }).then((value) => debugPrint('produto cadastrado'));
             },
             icon: const Icon(Icons.check),
             label: const Text('Cadastrar')),

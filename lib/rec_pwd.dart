@@ -50,7 +50,7 @@ class _MyStatefulWidgetState extends State<RecPwd> {
                   height: 60,
                   child: ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blueGrey,
+                      backgroundColor: Colors.blueGrey,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(

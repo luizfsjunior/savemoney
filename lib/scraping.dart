@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:html/dom.dart' as dom;
 
-import 'models/Atricle.dart';
+import 'models/article_class.dart';
 
 class Scraping extends StatefulWidget {
   const Scraping({Key? key}) : super(key: key);
@@ -36,7 +36,10 @@ class _MyHomePageState extends State<Scraping> {
             (element) => 'https://www.amazon.com/${element.attributes['href']}')
         .toList();
 
-    print('Count: ${titles.length}');
+    debugPrint('Count: ${titles.length}');
+    if (!mounted) {
+      return;
+    }
     setState(() {
       articles = List.generate(
         titles.length,
@@ -54,21 +57,22 @@ class _MyHomePageState extends State<Scraping> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.blueGrey,
-        appBar: AppBar(
-          title: const Text('Web Scraping'),
-          centerTitle: true,
-        ),
-        body: ListView.builder(
-          padding: const EdgeInsets.all(12),
-          itemCount: articles.length,
-          itemBuilder: (context, index) {
-            final article = articles[index];
-            return ListTile(
-              title: Text(article.title),
-              subtitle: Text(article.url),
-            );
-          },
-        ));
+      backgroundColor: Colors.blueGrey,
+      appBar: AppBar(
+        title: const Text('Web Scraping'),
+        centerTitle: true,
+      ),
+      body: ListView.builder(
+        padding: const EdgeInsets.all(12),
+        itemCount: articles.length,
+        itemBuilder: (context, index) {
+          final article = articles[index];
+          return ListTile(
+            title: Text(article.title),
+            subtitle: Text(article.url),
+          );
+        },
+      ),
+    );
   }
 }

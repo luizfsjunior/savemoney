@@ -70,8 +70,8 @@ class _MyStatefulWidgetState extends State<Home> {
             FloatingActionButton.extended(
                 backgroundColor: Colors.grey,
                 onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Box()));
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => const Box()));
                 },
                 heroTag: 'buttom2',
                 icon: const Icon(Icons.list),

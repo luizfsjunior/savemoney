@@ -62,8 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         padding: const EdgeInsets.only(top: 10),
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            onPrimary: Colors.grey,
-                            primary: Colors.white,
+                            foregroundColor: Colors.grey,
+                            backgroundColor: Colors.white,
                             shadowColor: Colors.grey[400],
                             elevation: 10,
                             shape: RoundedRectangleBorder(
@@ -97,8 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         padding: const EdgeInsets.only(top: 10),
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            onPrimary: Colors.grey,
-                            primary: Colors.white,
+                            foregroundColor: Colors.grey,
+                            backgroundColor: Colors.white,
                             shadowColor: Colors.grey[400],
                             elevation: 10,
                             shape: RoundedRectangleBorder(

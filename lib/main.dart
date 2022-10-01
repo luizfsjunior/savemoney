@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter_startup/services/flutter_fire_auth.dart';
 
 import 'Login.dart';
 
@@ -18,7 +17,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final user = FlutterFireAuth(context).getLoggedUser();
     return MaterialApp(
       theme: ThemeData(appBarTheme: const AppBarTheme(color: Colors.grey)),
       debugShowCheckedModeBanner: false,
@@ -26,7 +24,6 @@ class MyApp extends StatelessWidget {
       home: const Scaffold(
         backgroundColor: Colors.grey,
         body: Login(),
-        //body: user != null ? const Home() : const Login(),
       ),
     );
   }
